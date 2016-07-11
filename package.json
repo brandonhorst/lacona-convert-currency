@@ -1,0 +1,48 @@
+{
+  "name": "lacona-convert-currency",
+  "version": "1.0.0",
+  "description": "Convert between various monetary currencies",
+  "main": "lib/extensions.js",
+  "lacona": {
+    "title": "Convert Currency",
+    "description": "Convert between various monetary currencies",
+    "config": "config.json"
+  },
+  "scripts": {
+    "build": "babel src --out-dir lib",
+    "clean": "rimraf lib",
+    "prepublish": "npm run clean && npm run build"
+  },
+  "keywords": [
+    "lacona",
+    "lacona-addon"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brandonhorst/lacona-convert-currency.git"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-plugin-transform-function-bind": "^6.8.0",
+    "babel-plugin-transform-react-jsx": "^6.8.0",
+    "babel-preset-es2015": "^6.1.0",
+    "rimraf": "^2.5.2"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ],
+    "plugins": [
+      "transform-react-jsx",
+      "transform-function-bind"
+    ]
+  },
+  "dependencies": {
+    "elliptical": "^1.0.0-rc17",
+    "lacona-api": "^0.9.0",
+    "lacona-phrases": "^0.9.0",
+    "node-fetch": "^1.5.3",
+    "rxjs": "^5.0.0-beta.10"
+  }
+}
