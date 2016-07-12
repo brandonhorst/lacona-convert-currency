@@ -16,7 +16,14 @@ const currencies =
     singular: [
       'Australian Dollar',
       'Australia Dollar',
-      'Dollar'
+      'Dollar',
+      'A$',
+      '$'
+    ],
+    plural: [
+      'Australian Dollars',
+      'Australia Dollars',
+      'Dollars'
     ],
     qualifiers: ['Australia'],
     annotations: [{type: 'text', value: '🇦🇺'}]
@@ -25,7 +32,16 @@ const currencies =
     singular: [
       'Bulgarian Lev',
       'Bulgaria Lev',
-      'Lev'
+      'Lev',
+      'лв'
+    ],
+    plural: [
+      'Bulgarian Levove',
+      'Bulgarian Leva',
+      'Bulgaria Levove',
+      'Bulgaria Leva',
+      'Levove',
+      'Leva'
     ],
     annotations: [{type: 'text', value: '🇧🇬'}]
   },
@@ -33,7 +49,14 @@ const currencies =
     singular: [
       'Brazilian Real',
       'Brazil Real',
-      'Real'
+      'Real',
+      'R$',
+      'BR$'
+    ],
+    plural: [
+      'Brazilian Reais',
+      'Brazil Reais',
+      'Reais'
     ],
     annotations: [{type: 'text', value: '🇧🇷'}]
   },
@@ -41,7 +64,14 @@ const currencies =
     singular: [
       'Canadian Dollar',
       'Canada Dollar',
-      'Dollar'
+      'Dollar',
+      'CA$',
+      '$'
+    ],
+    plural: [
+      'Canadian Dollars',
+      'Canada Dollars',
+      'Dollars'
     ],
     qualifiers: ['Canada'],
     annotations: [{type: 'text', value: '🇨🇦'}]
@@ -50,7 +80,19 @@ const currencies =
     singular: [
       'Swiss Franc',
       'Switzerland Franc',
-      'Franc'
+      'Franc',
+      'Fr'
+    ],
+    singular: [
+      'Swiss Francs',
+      'Swiss Franken',
+      'Swiss Franchi',
+      'Switzerland Francs',
+      'Switzerland Franken',
+      'Switzerland Franchi',
+      'Francs',
+      'Franken',
+      'Franchi'
     ],
     annotations: [{type: 'text', value: '🇨🇭'}]
   },
@@ -63,6 +105,8 @@ const currencies =
       'China Renminbi',
       'Renminbi',
       'RMB',
+      'CN¥',
+      'CNH',
       '¥'
     ],
     qualifiers: ['China'],
@@ -72,7 +116,13 @@ const currencies =
     singular: [
       'Czech Republic Koruna',
       'Czech Koruna',
-      'Koruna'
+      'Koruna',
+      'Kč'
+    ],
+    plural: [
+      'Czech Republic Korunas',
+      'Czech Korunas',
+      'Korunas',
     ],
     annotations: [{type: 'text', value: '🇨🇿'}]
   },
@@ -80,25 +130,53 @@ const currencies =
     singular: [
       'Danish Krone',
       'Denmark Krone',
-      'Krone'
+      'Krone',
+      'kr'
+    ],
+    plural: [
+      'Danish Kroner',
+      'Denmark Kroner',
+      'Kroner'
     ],
     qualifiers: ['Denmark'],
     annotations: [{type: 'text', value: '🇩🇰'}]
   },
   'EUR': {
     singular: [
-      'Euro'
+      'Euro',
+      '€'
+    ],
+    plural: [
+      'Euros',
+      '€'
     ],
     annotations: [{type: 'text', value: '🇪🇺'}]
   },
   'GBP': {
     singular: [
-      'British Pound',
-      'UK Pound',
-      'United Kingdom Pound',
-      'Great Britain Pound',
-      'Pound',
       'Pound Sterling',
+      'British Pound',
+      'British Pound Sterling',
+      'UK Pound',
+      'UK Pound Sterling',
+      'United Kingdom Pound',
+      'United Kingdom Pound Sterling',
+      'Great Britain Pound',
+      'Great Britain Pound Sterling',
+      'Pound',
+      '£'
+    ],
+    plural: [
+      'Pounds Sterling',
+      'British Pounds',
+      'British Pounds Sterling',
+      'UK Pounds',
+      'UK Pounds Sterling',
+      'United Kingdom Pounds',
+      'United Kingdom Pounds Sterling',
+      'Great Britain Pounds',
+      'Great Britain Pounds Sterling',
+      'Pounds',
       '£'
     ],
     annotations: [{type: 'text', value: '🇬🇧'}]
@@ -106,7 +184,13 @@ const currencies =
   'HKD': {
     singular: [
       'Hong Kong Dollar',
-      'Dollar'
+      'Dollar',
+      'HK$',
+      '$'
+    ],
+    plural: [
+      'Hong Kong Dollars',
+      'Dollars'
     ],
     qualifiers: ['Hong Kong'],
     annotations: [{type: 'text', value: '🇭🇰'}]
@@ -117,39 +201,74 @@ const currencies =
       'Croatia Kuna',
       'Kuna'
     ],
+    plural: [
+      'Croatian Kunas',
+      'Croatia Kunas',
+      'Kunas',
+      'kn'
+    ],
     annotations: [{type: 'text', value: '🇭🇷'}]
   },
   'HUF': {
     singular: [
       'Hungarian Forint',
       'Hungary Forint',
-      'Forint'
+      'Forint',
+      'Ft'
     ],
+    plural: [],
     annotations: [{type: 'text', value: '🇭🇺'}]
   },
   'IDR': {
     singular: [
       'Indonesian Rupiah',
       'Indonesia Rupiah',
-      'Rupiah'
+      'Rupiah',
+      'Rp'
     ],
+    plural: [],
+    qualifiers: ['Indonesia'],
     annotations: [{type: 'text', value: '🇮🇩'}]
   },
   'ILS': {
     singular: [
-      'Israeli New Sheqel',
+      'Israeli New Shekel',
+      'Israeli Shekel',
       'Israeli Sheqel',
-      'Israel New Sheqel',
+      'Israel New Shekel',
+      'Israel Shekel',
       'Israel Sheqel',
-      'New Sheqel',
-      'Sheqel'
+      'New Shekel',
+      'Shekel',
+      'Sheqel',
+      '₪'
+    ],
+    plural: [
+      'Israeli New Shekels',
+      'Israeli Shekels',
+      'Israeli Sheqels',
+      'Israel New Shekels',
+      'Israel Shekels',
+      'Israel Sheqels',
+      'New Shekels',
+      'Shekels',
+      'Sheqels',
+      'Israeli Sheqaim',
+      'Israel Sheqalim',
+      'Sheqalim'
     ],
     annotations: [{type: 'text', value: '🇮🇱'}]
   },
   'INR': {
     singular: [
       'Indian Rupee',
-      'Rupee'
+      'Rupee',
+      '₹',
+      'Rs'
+    ],
+    plural: [
+      'Indian Rupees',
+      'Rupees'
     ],
     annotations: [{type: 'text', value: '🇮🇳'}]
   },
@@ -159,6 +278,7 @@ const currencies =
       'Yen',
       '¥'
     ],
+    plural: [],
     qualifiers: ['Japan'],
     annotations: [{type: 'text', value: '🇯🇵'}]
   },
@@ -166,14 +286,22 @@ const currencies =
     singular: [
       'South Korean Won',
       'Korean Won',
-      'Won'
+      'Won',
+      '₩'
     ],
+    plural: [],
     annotations: [{type: 'text', value: '🇰🇷'}]
   },
   'MXN': {
     singular: [
       'Mexican Peso',
-      'Peso'
+      'Peso',
+      'Mex$',
+      '$'
+    ],
+    plural: [
+      'Mexican Pesos',
+      'Pesos'
     ],
     qualifiers: ['Mexico'],
     annotations: [{type: 'text', value: '🇲🇽'}]
@@ -183,7 +311,14 @@ const currencies =
       'Malaysian Ringgit',
       'Malaysia Ringgit',
       'Malay Ringgit',
-      'Ringgit'
+      'Ringgit',
+      'RM'
+    ],
+    plural: [
+      'Malaysian Ringgits',
+      'Malaysia Ringgits',
+      'Malay Ringgits',
+      'Ringgits'
     ],
     annotations: [{type: 'text', value: '🇲🇾'}]
   },
@@ -191,7 +326,13 @@ const currencies =
     singular: [
       'Norwegian Krone',
       'Norway Krone',
-      'Krone'
+      'Krone',
+      'kr'
+    ],
+    plural: [
+      'Norwegian Kroner',
+      'Norway Kroner',
+      'Kroner'
     ],
     qualifiers: ['Norway'],
     annotations: [{type: 'text', value: '🇳🇴'}]
@@ -199,7 +340,14 @@ const currencies =
   'NZD': {
     singular: [
       'New Zealand Dollar',
-      'Dollar'
+      'Dollar',
+      'NZ$',
+      '$',
+      'Kiwi',
+    ],
+    plural: [
+      'New Zealand Dollars',
+      'Dollars'
     ],
     qualifiers: ['New Zealand'],
     annotations: [{type: 'text', value: '🇳🇿'}]
@@ -208,7 +356,13 @@ const currencies =
     singular: [
       'Philippine Peso',
       'Philippines Peso',
-      'Peso'
+      'Peso',
+      '₱'
+    ],
+    plural: [
+      'Philippine Pesos',
+      'Philippines Pesos',
+      'Pesos'
     ],
     qualifiers: ['Philippines'],
     annotations: [{type: 'text', value: '🇵🇭'}]
@@ -217,8 +371,10 @@ const currencies =
     singular: [
       'Polish Zloty',
       'Poland Zloty',
-      'Zloty'
+      'Zloty',
+      'zł'
     ],
+    plural: [],
     annotations: [{type: 'text', value: '🇵🇱'}]
   },
   'RON': {
@@ -227,28 +383,53 @@ const currencies =
       'Romania Leu',
       'Leu'
     ],
+    plural: [
+      'Romanian Lei',
+      'Romania Lei',
+      'Lei'
+    ],
     annotations: [{type: 'text', value: '🇷🇴'}]
   },
   'RUB': {
     singular: [
       'Russian Ruble',
       'Russia Ruble',
-      'Ruble'
+      'Ruble',
+      '₽'
     ],
+    plural: [
+      'Russian Rubles',
+      'Russia Rubles',
+      'Rubles'
+    ],
+    qualifiers: ['Russia'],
     annotations: [{type: 'text', value: '🇷🇺'}]
   },
   'SEK': {
     singular: [
       'Swedish Krona',
       'Sweden Krona',
-      'Krona'
+      'Krona',
+      'kr'
     ],
+    singular: [
+      'Swedish Kronor',
+      'Sweden Kronor',
+      'Kronor'
+    ],
+    qualifiers: ['Sweden'],
     annotations: [{type: 'text', value: '🇸🇪'}]
   },
   'SGD': {
     singular: [
       'Singapore Dollar',
-      'Dollar'
+      'Dollar',
+      'S$',
+      '$'
+    ],
+    plural: [
+      'Singapore Dollars',
+      'Dollars'
     ],
     qualifiers: ['Singapore'],
     annotations: [{type: 'text', value: '🇸🇬'}]
@@ -257,7 +438,13 @@ const currencies =
     singular: [
       'Thai Baht',
       'Thailand Baht',
-      'Baht'
+      'Baht',
+      '฿'
+    ],
+    plural: [
+      'Thai Bahts',
+      'Thailand Bahts',
+      'Bahts'
     ],
     annotations: [{type: 'text', value: '🇹🇭'}]
   },
@@ -265,7 +452,13 @@ const currencies =
     singular: [
       'Turkish Lira',
       'Turkey Lira',
-      'Lira'
+      'Lira',
+      '₺'
+    ],
+    plural: [
+      'Turkish Liras',
+      'Turkey Liras',
+      'Liras'
     ],
     annotations: [{type: 'text', value: '🇹🇷'}]
   },
@@ -278,7 +471,18 @@ const currencies =
       'United States of America Dollar',
       'United States of American Dollar',
       'American Dollar',
-      '$'
+      '$',
+      'buck'
+    ],
+    plural: [
+      'United States Dollars',
+      'US Dollars',
+      'USA Dollars',
+      'Dollars',
+      'United States of America Dollars',
+      'United States of American Dollars',
+      'American Dollars',
+      'bucks'
     ],
     qualifiers: ['United States'],
     annotations: [{type: 'text', value: '🇺🇸'}]
@@ -287,7 +491,13 @@ const currencies =
     singular: [
       'South African Rand',
       'African Rand',
-      'Rand'
+      'Rand',
+      'R'
+    ],
+    plural: [
+      'South African Rands',
+      'African Rands',
+      'Rands'
     ],
     annotations: [{type: 'text', value: '🇿🇦'}]
   }
@@ -313,10 +523,10 @@ const CurrencySource = {
 
 const Currency = {
   describe () {
-    const currencyLists = _.map(currencies, ({singular, qualifiers, annotations}, code) => {
+    const currencyLists = _.map(currencies, ({singular, plural, qualifiers, annotations}, code) => {
       return <list
         limit={1}
-        items={singular.concat(code)}
+        items={singular.concat(plural || [], code)}
         qualifiers={qualifiers}
         annotations={annotations}
         value={code} />
@@ -354,7 +564,7 @@ export const ConvertCurrency = {
       output = `${converted[0].toAmount}${converted[0].to}`
     } else {
       output = _.map(converted, ({from, to, fromAmount, toAmount}) => {
-        return `${fromAmount} ${from} = ${toAmount} ${to}`
+        return `${fromAmount} ${from} = ${+toAmount.toFixed(2)} ${to}`
       }).join('\n')
     }
 
