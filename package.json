@@ -5,7 +5,7 @@
   "main": "lib/extensions.js",
   "lacona": {
     "title": "Convert Currency",
-    "description": "Convert between various monetary currencies",
+    "description": "Convert between various global currencies",
     "config": "config.json"
   },
   "scripts": {

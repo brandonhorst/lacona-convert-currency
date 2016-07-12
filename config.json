@@ -4,6 +4,7 @@
     "properties": {
       "defaultCurrency": {
         "type": "string",
+        "description": "This will be used if you do not specify a 'to' currency.",
         "default": "USD",
         "enum": [
           "AUD",
