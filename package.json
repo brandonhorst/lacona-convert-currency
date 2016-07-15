@@ -1,6 +1,6 @@
 {
   "name": "lacona-convert-currency",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Convert between various monetary currencies",
   "main": "lib/extensions.js",
   "lacona": {
