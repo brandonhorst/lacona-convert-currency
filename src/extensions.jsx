@@ -80,7 +80,7 @@ export const ConvertCurrency = {
       let output
 
       if (converted.length === 1) {
-        output = `${converted[0].toAmount}${converted[0].to}`
+        output = `${+converted[0].toAmount.toFixed(2)}${converted[0].to}`
       } else {
         output = _.map(converted, ({from, to, fromAmount, toAmount}) => {
           return `${fromAmount} ${from} = ${+toAmount.toFixed(2)} ${to}`
