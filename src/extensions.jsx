@@ -76,7 +76,7 @@ export const ConvertCurrency = {
   execute (result, {observe, config}) {
     const rates = observe(<CurrencySource />)
     if (rates) {
-      const converted = convert(result, rates, config.currencyConversion.defaultCurrency)
+      const converted = convert(result, rates, config.defaultCurrency)
       let output
 
       if (converted.length === 1) {
@@ -94,7 +94,7 @@ export const ConvertCurrency = {
   preview (result, {observe, config}) {
     const rates = observe(<CurrencySource />)
     if (rates) {
-      const converted = convert(result, rates, config.currencyConversion.defaultCurrency)
+      const converted = convert(result, rates, config.defaultCurrency)
 
       const strings = _.map(converted, ({from, to, fromAmount, toAmount}) => {
         return `${fromAmount} ${from} = ${+toAmount.toFixed(2)} ${to}`

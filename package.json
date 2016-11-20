@@ -6,7 +6,12 @@
   "lacona": {
     "title": "Convert Currency",
     "description": "Convert between various global currencies",
-    "config": "config.json"
+    "iconURL": "https://raw.githubusercontent.com/brandonhorst/lacona-convert-currency/master/icon.png",
+    "examples": [
+      "convert [29.99](amount) [🇺🇸USD](currency) to [🇨🇳RMB](currency)",
+      "convert [1000](amount) [🇪🇺Euro](currency)"
+    ],
+    "engine": ">=1.1.0"
   },
   "scripts": {
     "build": "babel src --out-dir lib",
